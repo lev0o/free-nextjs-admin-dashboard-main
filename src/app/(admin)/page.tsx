@@ -3,8 +3,8 @@ import { CityOpsMetrics } from "@/components/scenario-modeling/CityOpsMetrics";
 import React from "react";
 import MonthlyIncidentsChart from "@/components/scenario-modeling/MonthlyIncidentsChart";
 import StatisticsChart from "@/components/scenario-modeling/StatisticsChart";
-import RecentOrders from "@/components/scenario-modeling/RecentOrders";
-import DemographicCard from "@/components/scenario-modeling/HeatMapCard";
+import RecentIncidents from "@/components/scenario-modeling/RecentIncidents";
+import HeatMapCard from "@/components/scenario-modeling/HeatMapCard";
 
 export const metadata: Metadata = {
   title:
@@ -26,11 +26,11 @@ export default function ScenarioModeling() {
       </div> */}
 
       <div className="col-span-12 xl:col-span-5">
-        <DemographicCard />
+        <HeatMapCard />
       </div>
 
       <div className="col-span-12 xl:col-span-7">
-        <RecentOrders />
+        <RecentIncidents />
       </div>
     </div>
   );
